@@ -1,0 +1,29 @@
+版心: 一般叫 wrapper
+快捷导航：shortcut
+侧导航：一般叫 aside
+轮播图：banner
+轮播图箭头：上一张图【prev】下一张图【next】【一般用并集选择器】
+【若图片显示位置错误，则可以用 F12检查 通过样式来调整px的大小，然后再去vsc里面改】
+轮播图下面的点（换图圆点）：一般使用 ol 嵌套 li
+
+装饰：cursor : pointer;  【鼠（光）标放在轮播图圆点上显示手的形状】
+当前状态：current / active【轮播图图片当前状态使用的class名】
+【js 找到用户点击的li 添加类名 li变成白色的】
+           <ol>
+                <li></li>
+                <li></li>
+                <li class="current"></li>
+                <li></li>
+                <li></li>
+            </ol>
+【通过 js 事件点击改变 class="current" 所在的li】
+
+圆角边框：boder-radius: 50%；
+半透明的背景：
+bgc：rgba(0, 0, 0, .2)  【第四个可以在0~1之间取值代表透明度】
+bgc：rgba(255, 255, 255, 0.4) 【前面三个数字取值为 0-255 之间】
+【0：黑色；255：纯白】
+
+【伪元素是行内元素，宽高不会生效】，因此有两种解决方法：
+①通过display改变	【使用display记得添加 vertical-align 对齐精灵图】
+②通过定位：position改变【使用定位记得 子绝父相】
